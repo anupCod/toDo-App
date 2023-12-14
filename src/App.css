@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-image: linear-gradient( 90deg, rgb(179, 112, 112), rgb(183, 183, 183));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoContainer {
+    background-color: rgb(23, 138, 226);
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.AppHead {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 0;
+    background-color: rgb(225, 9, 9);
+    color: white;
+    text-align: center;
+}
+
+.mainTODObox {
+    padding: 1.5rem 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.todoForm {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 18rem;
+    background-color: white;
+    padding: 1rem 1rem;
+}
+
+input[name="myTitle"] {
+    height: 3rem;
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 1rem;
+    background-color: rgb(163, 160, 160);
+    border: 0;
+    border-radius: 12px;
+}
+
+.mydescription {
+    height: 12rem;
+    margin: 0 0 1rem 0;
+    padding: 0.2rem 0 0 1rem;
+    font-size: 1rem;
+    background-color: rgb(163, 160, 160);
+    border: 0;
+    border-radius: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    position: absolute;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    top: 0.4rem;
+    left: 1rem;
+}
+
+.addBtn {
+    padding: 0.7rem 0rem;
+    background-color: orangered;
+    border: 0;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+.addBtn:hover {
+    background-color: rgb(216, 95, 51);
+    cursor: pointer;
+}
+
+.myTODObox {
+    width: 55%;
+    height: 95%;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.myList {
+    width: 100%;
+    color: white;
+    height: auto;
+    background-color: rgb(210, 108, 13);
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.myListContent {
+    width: 80%;
+    height: auto;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.myListContent h3 {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.myListContent p {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.fa-trash-alt {
+    font-size: 1.2rem;
+}
+
+.fa-trash-alt:hover {
+    cursor: pointer;
+}
